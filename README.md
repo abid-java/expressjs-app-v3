@@ -6,3 +6,5 @@
 
 How to use **Express-Generator**?
 **npm generator** or **npm install express-generator**
+
+To Roll Back to Last Commit : **git reset --hard HEAD~1**
