@@ -3,10 +3,21 @@
 /**
  * Module dependencies.
  */
+/*jshint esversion: 6 */
+
 
 var app = require('../app');
 var debug = require('debug')('expressjs-app-v3:server');
 var http = require('http');
+
+var mongoose = require('mongoose');
+var dbUrl = require('./dbproperties').DB_URL;
+
+mongoose.connect(dbUrl);
+
+mongoose.connection.on("connected", () => {
+    console.log("<========= Connected to Database =========>");
+});
 
 /**
  * Get port from environment and store in Express.
