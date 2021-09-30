@@ -9,7 +9,10 @@ How to use **Express-Generator**?
 
 To Roll Back to Last Commit : **git reset --hard HEAD~1**
 
-
 install dependencies: **npm install**
 
 run the app: **SET DEBUG=expressjs-app-v3:* & npm start**
+
+Mongo DB Connection String : 
+
+**mongodb://localhost:27017/?readPreference=primary&appname=MongoDB%20Compass&directConnection=true&ssl=false**
